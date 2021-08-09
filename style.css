@@ -1,0 +1,217 @@
+body{
+    background-color: rgb(26, 25, 25);
+    font-family: 'Acme', sans-serif;
+}
+nav{
+    z-index: 2;
+    height: 100vh;
+    position: fixed;
+    width: 150px;
+}
+.s1{
+    color:rgb(240, 65, 94);
+    text-shadow: -6px 0px 3px cyan;
+    font-size: 100px;
+    line-height: 100px;
+}
+.s2{
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+.list, .list a{
+    color: rgb(197, 195, 195);
+}
+.list:hover, .list a:hover, #home h1:hover, .s2:hover{
+    color: cyan;
+}
+.base{
+    position: relative;
+    width: 100%;
+    padding: 150px 200px;
+    flex-wrap: wrap;
+}
+#home h1{
+    font-size: 85px;
+    color: white;
+    margin: 0;
+}
+.para{
+    color:rgb(155, 153, 153);
+}
+.para:hover{
+    color: white;
+}
+.heading{
+    color: cyan;
+    font-size: 65px;
+}
+.about-me, .my-skills, .skill-type, .job{
+    color: rgb(216, 214, 214);
+}
+.progress{
+    background-color: transparent;
+}
+.p-outer{
+    width: 90%;
+    height: 3px;
+    background-color: gray;
+}
+.p-inner1{
+    width: 80%;
+    height: 100%;
+    background-color: cyan;
+}
+.p-inner2{
+    width: 60%;
+    height: 100%;
+    background-color: rgb(255, 0, 85);
+}
+.p-inner3{
+    width: 75%;
+    height: 100%;
+    background-color: rgb(241, 4, 241);
+}
+.p-base{
+    position: relative;
+    width: 100%;
+    padding: 50px 200px;
+}
+.project-div{
+    flex-wrap: wrap;
+}
+.project-div div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    transition: 0.2s ease-in-out;
+    opacity: 0.7;
+    font-family: 'Abril Fatface', cursive;
+}
+.a1, .a7{
+    background-image: url("Images/i1.jpg");
+}
+.a2, .a8{
+    background-image: url("Images/i2.jpg");
+}
+.a3{
+    background-image: url("Images/i3.jpg");
+}
+.a4, .a6{
+    background-image: url("Images/i4.jpg");
+}
+.a5{
+    background-image: url("Images/i5.jpg");
+}
+.view{
+    vertical-align: middle;
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    color:white;
+    background-color: rgb(12, 12, 12);
+    transform: scale(0);
+    transition: 0.2s ease-in-out;
+    font-family: 'Abril Fatface', cursive;
+}
+.project-div div:hover{
+    opacity: 1;
+    transform: scale(1.05);
+}
+.project-div div:hover .view{
+    transform: scale(1);
+}
+.projects{
+    width: 240px;
+    height: 240px;
+}
+.base div{
+    width: 500px;
+}
+#home div{
+    width: 100%;
+}
+.div1{
+    border:3px solid red;
+    animation-name: borderChange;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+.big-head1{
+    font-size: 250px !important;
+    color: rgb(37, 37, 37) !important;
+    position: absolute;
+    top: 100;
+    left: 150;
+    z-index: -1;
+    font-family: 'Righteous', cursive;
+}
+.big-head2{
+    font-size: 250px !important;
+    color: rgb(37, 37, 37) !important;
+    position: absolute;
+    top: 150;
+    right: 90;
+    z-index: -1;
+    font-family: 'Righteous', cursive;
+}
+.big-head3{
+    font-size: 250px !important;
+    color: rgb(37, 37, 37) !important;
+    position: absolute;
+    top: 50;
+    right: 90;
+    z-index: -1;
+    font-family: 'Righteous', cursive;
+}
+input{
+    color: white;
+}
+
+
+/* Animations */
+
+@keyframes borderChange {
+    0%   {border:5px solid rgb(248, 10, 101);}
+    25%  {border:5px solid yellow;}
+    50%  {border:5px solid rgb(212, 0, 255);}
+    75%  {border:5px solid limegreen;}
+    100% {border:5px solid red;}
+}
+
+
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 600px){
+    .base, .p-base{
+        padding: 50px 0px 50px 170px;
+    }
+    #home h1{
+        font-size: 60px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .base, .p-base{
+        padding: 50px 50px 50px 170px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .base, .p-base{
+        padding: 50px 50px 50px 200px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .base, .p-base{
+        padding: 100px 10px 50px 200px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .base, .p-base{
+        padding: 100px 50px 50px 200px;
+    }
+}
